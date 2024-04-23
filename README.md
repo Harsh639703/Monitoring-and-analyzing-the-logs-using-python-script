@@ -86,11 +86,11 @@ while True:
         logging.info("Total Failed: %d", total_failed)
         logging.info("Total Success: %d", total_success)
 
-        
-        logging.info("Sleeping for 10 secs")# after processing the all logs it will go in sleep mode and wait for the other log to process them
+# after processing the all logs it will go in sleep mode and wait for the other log to process them       
+        logging.info("Sleeping for 10 secs")
         time.sleep(10)
-
-    except KeyboardInterrupt:# here we are handling the keyboard interupt
+# here we are handling the keyboard interupt
+    except KeyboardInterrupt:
         
         logging.info("Task Ended")
         break
